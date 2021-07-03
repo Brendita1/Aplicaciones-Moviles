@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card align="center">
+    <ion-card-title>
+      Ingreso
+    </ion-card-title>
+    <ion-card-content>
+      <ion-item>
+          <ion-input [(ngModel)]="user.user" type="text" placeholder="Ingresa tu usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input [(ngModel)]="user.pass" type="password" placeholder="Ingresa tu contraseña"></ion-input>
+      </ion-item>
+      <ion-button (click)="login()">Ingresar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
