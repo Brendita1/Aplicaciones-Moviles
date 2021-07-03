@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Mapa</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <agm-map [latitude]="locacion.lat" [longitude]="locacion.lng" [zoom]="15" (mapClick)="assets/imgs/icon.png">
+    <agm-marker [latitude]="locacion.lat" [longitude]="locacion.lng"><ion-icon name="cloud-download"></ion-icon></agm-marker>
+    <ion-icon name="cloud-download"></ion-icon> </agm-map>
+  <button color="primary" ion-button (click) = "closeModal()">Regresar</button>
+</ion-content>

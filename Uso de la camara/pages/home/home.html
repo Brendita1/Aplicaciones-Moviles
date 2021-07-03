@@ -1,0 +1,22 @@
+
+<ion-navbar color="dark">
+    <ion-title>
+    </ion-title>
+  </ion-navbar>
+
+
+<ion-content padding>
+  <p>
+      <ion-navbar color="dark">
+          <ion-title>
+            Prueba tu camara
+          </ion-title>
+        </ion-navbar>
+      
+        
+      <button block ion-button color="secondary" (click)="TomarFoto()">Camara</button>
+        <button block ion-button color="secondary" (click)="FotoGaleria()">Foto en Galeria</button>
+  </p>
+  <img *ngIf="image" [src]="image" alt="">
+</ion-content>
+     

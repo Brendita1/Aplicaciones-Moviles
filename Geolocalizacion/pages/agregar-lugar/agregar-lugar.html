@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title >Comenzar</ion-title>
+    <ion-buttons>
+      <button item-start ion-button (click) = "closeModal()"><ion-icon name="arrow-back"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <button color="secondary" ion-button (click)  = "ObtenerLocacion()">Mi ubicacion<ion-icon name="sunny"></ion-icon></button>
+    <div id="map">
+    <button color="secondary" ion-button (click) = "AbrirMapa()">Ver en el mapa<ion-icon name="tablet-portrait"></ion-icon></button>
+  </div>
+  </ion-content>
